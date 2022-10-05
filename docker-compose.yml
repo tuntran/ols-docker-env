@@ -19,6 +19,7 @@ services:
     image: litespeedtech/openlitespeed:${OLS_VERSION}-${PHP_VERSION}
     logging:
       driver: none
+    build: ./custom
     env_file:
       - .env
     volumes:
