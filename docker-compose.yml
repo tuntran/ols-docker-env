@@ -24,6 +24,7 @@ services:
     volumes:
       - ./lsws/conf:/usr/local/lsws/conf
       - ./lsws/admin-conf:/usr/local/lsws/admin/conf
+      - ./lsws/php74.conf:/usr/local/lsws/lsphp74/etc/php/7.4/litespeed/
       - ./bin/container:/usr/local/bin
       - ./sites:/var/www/vhosts/
       - ./acme:/root/.acme.sh/
